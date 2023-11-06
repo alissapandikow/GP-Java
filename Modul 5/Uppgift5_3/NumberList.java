@@ -6,6 +6,8 @@
     2023-11-06
 */
 
+import java.util.Arrays;
+
 public class NumberList {
     public static void main(String[] args) {
         int[] numbers = new int[args.length];
@@ -23,7 +25,7 @@ public class NumberList {
         System.out.println();
 
         // Sortera listan i sorterad ordning och skriv ut den
-        java.util.Arrays.sort(numbers);
+        Arrays.sort(numbers);
         System.out.print("Sorted: ");
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
