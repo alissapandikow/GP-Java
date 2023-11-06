@@ -1,5 +1,6 @@
 public class Printer {
     public static void main(String[] args) {
+
     int[] numbers = { 5, 0, -23 };
     numbers[1] += 16;
 
@@ -9,5 +10,8 @@ public class Printer {
 
     for (int i = 0; i < numbers.length; i++)
         System.out.println (numbers[i]);
+    
+    for (int i = 0; i < numbers.length; i++)
+        System.out.println (values[i]);
     }
 }
