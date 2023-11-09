@@ -12,8 +12,10 @@ import java.util.Arrays;
 public class NumberSquare {
     public static void main(String[] args) {
 
+        int 
+
         int numberOfArgs = Math.sqrt(args.length()); //Vad räknar den med?
-        int numberOfRows =  Math.sqrt(args.length());
+        int numberOfRows =  Math.sqrt(numberOfArgs)
 
         System.out.print(numberOfRows);
 
