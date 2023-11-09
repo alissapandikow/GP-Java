@@ -15,7 +15,7 @@ public class NumberSquare {
         int 
 
         int numberOfArgs = Math.sqrt(args.length()); //Vad räknar den med?
-        int numberOfRows =  Math.sqrt(numberOfArgs)
+        int numberOfRows =  Math.sqrt(numberOfArgs);
 
         System.out.print(numberOfRows);
 
