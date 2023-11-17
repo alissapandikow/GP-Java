@@ -12,13 +12,13 @@ public class DiceSim {
     public static void main(String[] args) {
         int rolls = Integer.parseInt(args[0]);
         int[] diceResults = new int[rolls];
-        int[] histogram = new int[6];
-        int median;
+
+        int[] histogram = new int[6]; // Count occurrences of each number rolled
 
         for (int i = 0; i < rolls; i++) {
             int oneRoll = (int) (Math.random() * 6) + 1;
             diceResults[i] = oneRoll;
-            histogram[oneRoll - 1]++;
+            histogram[oneRoll - 1]++; // Increment the count for the rolled number
         }
 
         // Bestäm genomsnittet av alla tärningskast
@@ -27,11 +27,11 @@ public class DiceSim {
             sum += diceResults[i];
         }
         double avg = (double) sum / rolls;
-        System.out.println("Average: " + avg)
-
+        System.out.println("Average: " + avg);
 
         // Bestäm medianen av alla resultat
         Arrays.sort(diceResults);
+        int median;
         if (rolls % 2 == 0) {
             int lowerMidIndex = rolls / 2 - 1;
             int higherMidIndex = rolls / 2;
@@ -40,22 +40,19 @@ public class DiceSim {
             int medianIndex = rolls / 2;
             median = diceResults[medianIndex];
         }
-        System.out.println("Median: " + median)
+        System.out.println("Median: " + median);
 
-        //Skriver ut histogrammet
+        // Skriver ut histogrammet
         System.out.println("Histogram:");
         for (int i = 0; i < 6; i++) {
             System.out.printf("%-6d", (i + 1));
         }
         System.out.println();
 
-        int[] sums = new int[6];
         for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < histogram[i]; j++) {
-                sums[i] += (i + 1);
-            }
-            System.out.printf("%-6d", sums[i]);
+            System.out.printf("%-6d", histogram[i]); 
         }
         System.out.println();
     }
 }
+
