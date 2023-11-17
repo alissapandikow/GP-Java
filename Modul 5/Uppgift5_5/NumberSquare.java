@@ -6,16 +6,15 @@
     2023-11-09
 */
 
-import java.util.Math;
 import java.util.Arrays;
 
 public class NumberSquare {
     public static void main(String[] args) {
 
-        int numberOfArgs = Math.sqrt(args.length()); //Vad räknar den med?
-        int numberOfRows =  Math.sqrt(numberOfArgs);
+        int numberOfArgs = args.length; //Vad räknar den med?
+        double numberOfRows =  Math.sqrt(numberOfArgs);
 
-        System.out.print(numberOfRows);
+        System.out.print(args.length);
 
     }
 

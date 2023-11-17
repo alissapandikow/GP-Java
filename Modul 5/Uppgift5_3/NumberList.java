@@ -18,7 +18,7 @@ public class NumberList {
         }
 
         // Skriv ut den osorterade listan
-        System.out.print("Original: ");
+        System.out.println("Original: ");
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
@@ -26,7 +26,7 @@ public class NumberList {
 
         // Sortera listan i sorterad ordning och skriv ut den
         Arrays.sort(numbers);
-        System.out.print("Sorted: ");
+        System.out.println("Sorted: ");
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
